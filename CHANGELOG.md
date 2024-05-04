@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Mohith-Kumar28/ree-pe/compare/v1.0.0...v1.1.0) (2024-05-04)
+
+
+### Features
+
+* added playwright ([a0cf259](https://github.com/Mohith-Kumar28/ree-pe/commit/a0cf259e77beca0529962386ec76b70f0a3d8d62))
+
 # 1.0.0 (2024-05-04)
 
 
