@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import * as React from 'react';
 
-import { navigationConfig } from '@/components/reusable-components/config/navigation';
+import { homeNavigationConfig } from '@/components/reusable-components/config/navigation';
 import { siteConfig } from '@/components/reusable-components/config/site';
 import { icons } from '@/components/reusable-components/icons/icons';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-// import { navigationConfig } from '@/config/docs';
+// import { homeNavigationConfig } from '@/config/docs';
 import { cn } from '@/lib/utils';
 
 interface MobileLinkProps extends LinkProps {
@@ -96,7 +96,7 @@ export function MobileNav() {
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
-            {navigationConfig.mainNav?.map(
+            {homeNavigationConfig.mainNav?.map(
               (item) =>
                 item.href && (
                   <MobileLink
@@ -110,7 +110,7 @@ export function MobileNav() {
             )}
           </div>
           <div className="flex flex-col space-y-2">
-            {navigationConfig.sidebarNav.map((item) => (
+            {homeNavigationConfig.sidebarNav.map((item) => (
               <div key={item.title} className="flex flex-col space-y-3 pt-6">
                 <h4 className="font-medium">{item.title}</h4>
                 {item?.items?.length &&
