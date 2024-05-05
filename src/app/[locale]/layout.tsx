@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
+// import { ThemeProvider } from 'next-themes';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -48,7 +49,9 @@ export default function RootLayout(props: {
           locale={props.params.locale}
           messages={messages}
         >
+          {/* <ThemeProvider> */}
           {props.children}
+          {/* </ThemeProvider> */}
         </NextIntlClientProvider>
       </body>
     </html>
