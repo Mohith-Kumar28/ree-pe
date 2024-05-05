@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/Mohith-Kumar28/ree-pe/compare/v1.1.0...v1.2.0) (2024-05-05)
+
+
+### Bug Fixes
+
+* removed props ([89a3571](https://github.com/Mohith-Kumar28/ree-pe/commit/89a3571050f6f5672ef2a2558db42c8d1d2e4743))
+
+
+### Features
+
+* added navbar and pricing ([a649e9b](https://github.com/Mohith-Kumar28/ree-pe/commit/a649e9b736346eb29519f740f86f1df91d645365))
+
 # [1.1.0](https://github.com/Mohith-Kumar28/ree-pe/compare/v1.0.0...v1.1.0) (2024-05-04)
 
 
