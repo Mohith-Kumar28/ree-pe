@@ -3,15 +3,15 @@ import Image from 'next/image';
 import path from 'path';
 import { z } from 'zod';
 
-import { columns } from '../../components/users/columns';
-import { userSchema } from '../../components/users/data/schema';
-import { DataTable } from '../../components/users/data-table';
+import { columns } from './components/columns';
+import { DataTable } from './components/data-table';
+import { userSchema } from './data/schema';
 
 async function getUsers() {
   const data = await fs.readFile(
     path.join(
       process.cwd(),
-      'src/app/[locale]/(auth)/admin/components/users/data/users.json',
+      'src/app/[locale]/(auth)/admin/(pages)/users/data/users.json',
     ),
   );
 
