@@ -9,8 +9,8 @@ import {
 } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
-import RecentTransactions from '../components/reusable-components/recent-transactions';
-import Subscriptions from '../components/reusable-components/subscriptions';
+import RecentTransactions from '../../components/reusable-components/recent-transactions';
+import Subscriptions from '../../components/reusable-components/subscriptions';
 
 // import { getTranslations } from 'next-intl/server';
 

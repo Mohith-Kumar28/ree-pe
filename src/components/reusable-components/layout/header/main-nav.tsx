@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import * as React from 'react';
 
-import { siteConfig } from '@/components/reusable-components/config/site';
+import { siteConfig } from '@/components/config/site';
 import { icons } from '@/components/reusable-components/icons/icons';
 import { cn } from '@/lib/utils';
 
-import { homeNavigationConfig } from '../../config/navigation';
+import { homeNavigationConfig } from '../../../config/navigation';
 
 export function MainNav() {
   const pathname = usePathname();

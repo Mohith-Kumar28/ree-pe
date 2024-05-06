@@ -331,12 +331,12 @@ export const homeNavigationConfig: NavigationConfig = {
 export const adminNavItems: AdminNavItem[] = [
   { href: '/admin/overview', icon: Home, label: 'Overview' },
   {
-    href: '/accounts',
+    href: '#',
     icon: ShoppingCart,
     label: 'Accounts',
     badge: 6,
   },
   { href: '#', icon: Package, label: 'Subscriptions' },
-  { href: '#', icon: Users, label: 'Users' },
+  { href: '/admin/users', icon: Users, label: 'Users' },
   { href: '#', icon: LineChart, label: 'Settings' },
 ];
