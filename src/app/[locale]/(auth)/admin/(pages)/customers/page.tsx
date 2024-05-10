@@ -4,7 +4,7 @@ import path from 'path';
 import { z } from 'zod';
 
 import CustomersTable from './components/customers-table';
-import { userSchema } from './data/schema';
+import { customerSchema } from './data/schema';
 
 async function getCustomers() {
   const data = await fs.readFile(
@@ -16,7 +16,7 @@ async function getCustomers() {
 
   const customers = JSON.parse(data.toString());
 
-  return z.array(userSchema).parse(customers);
+  return z.array(customerSchema).parse(customers);
 }
 const Customers = async () => {
   const customers = await getCustomers();

@@ -3,6 +3,8 @@
 import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 import type { Row } from '@tanstack/react-table';
 
+import { labels } from '@/app/[locale]/(auth)/admin/(pages)/customers/data/data';
+import { customerSchema } from '@/app/[locale]/(auth)/admin/(pages)/customers/data/schema';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -18,9 +20,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-import { labels } from '../../../app/[locale]/(auth)/admin/(pages)/customers/data/data';
-import { userSchema } from '../../../app/[locale]/(auth)/admin/(pages)/customers/data/schema';
-
 interface DataTableRowActionsProps<TData> {
   row: Row<TData>;
 }
@@ -28,7 +27,7 @@ interface DataTableRowActionsProps<TData> {
 export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
-  const user = userSchema.parse(row.original);
+  const customer = customerSchema.parse(row.original);
 
   return (
     <DropdownMenu>
@@ -49,7 +48,7 @@ export function DataTableRowActions<TData>({
         <DropdownMenuSub>
           <DropdownMenuSubTrigger>Labels</DropdownMenuSubTrigger>
           <DropdownMenuSubContent>
-            <DropdownMenuRadioGroup value={user.label}>
+            <DropdownMenuRadioGroup value={customer.label}>
               {labels.map((label) => (
                 <DropdownMenuRadioItem key={label.value} value={label.value}>
                   {label.label}

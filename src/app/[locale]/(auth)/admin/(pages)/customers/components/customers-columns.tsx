@@ -2,15 +2,15 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 
+import { DataTableRowActions } from '@/app/[locale]/(auth)/admin/(pages)/customers/components/data-table-row-actions';
 import { DataTableColumnHeader } from '@/components/reusable-components/table/data-table-column-header';
-import { DataTableRowActions } from '@/components/reusable-components/table/data-table-row-actions';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
 
 import { labels, priorities, statuses } from '../data/data';
-import type { User } from '../data/schema';
+import type { Customer } from '../data/schema';
 
-export const CustomersColumns: ColumnDef<User>[] = [
+export const CustomersColumns: ColumnDef<Customer>[] = [
   {
     id: 'select',
     header: ({ table }) => (
@@ -38,7 +38,7 @@ export const CustomersColumns: ColumnDef<User>[] = [
   {
     accessorKey: 'id',
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="User" />
+      <DataTableColumnHeader column={column} title="Customer" />
     ),
     cell: ({ row }) => <div className="w-[80px]">{row.getValue('id')}</div>,
     enableSorting: false,
