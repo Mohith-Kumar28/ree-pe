@@ -337,6 +337,6 @@ export const adminNavItems: AdminNavItem[] = [
     badge: 6,
   },
   { href: '/admin/subscriptions', icon: Package, label: 'Subscriptions' },
-  { href: '/admin/users', icon: Users, label: 'Users' },
+  { href: '/admin/customers', icon: Users, label: 'Customers' },
   { href: '#', icon: LineChart, label: 'Settings' },
 ];
