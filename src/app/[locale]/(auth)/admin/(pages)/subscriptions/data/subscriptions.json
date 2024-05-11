@@ -1,6 +1,6 @@
 [
   {
-    "id": "PRODUCT-1234",
+    "id": "SUBSCRIPTION-1234",
     "title": "Laser Lemonade Machine",
     "status": "Draft",
     "label": "Electronics",
@@ -9,7 +9,7 @@
     "date": "2023-07-12T10:42:00"
   },
   {
-    "id": "PRODUCT-5678",
+    "id": "SUBSCRIPTION-5678",
     "title": "Robo Coffee Maker",
     "status": "Draft",
     "label": "Electronics",
@@ -18,7 +18,7 @@
     "date": "2023-09-05T08:15:00"
   },
   {
-    "id": "PRODUCT-9012",
+    "id": "SUBSCRIPTION-9012",
     "title": "Smart Security Camera",
     "status": "Draft",
     "label": "Electronics",
@@ -27,7 +27,7 @@
     "date": "2023-11-20T14:30:00"
   },
   {
-    "id": "PRODUCT-3456",
+    "id": "SUBSCRIPTION-3456",
     "title": "Bluetooth Speaker System",
     "status": "Draft",
     "label": "Electronics",

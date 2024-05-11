@@ -1,5 +1,5 @@
-import SideNav from './components/navigation/side-nav';
-import TopNav from './components/navigation/top-nav';
+import SideNav from '../../navigation/side-nav';
+import TopNav from '../../navigation/top-nav';
 
 interface LayoutWrapperProps {
   children: React.ReactNode;
@@ -11,6 +11,7 @@ const LayoutWrapper: React.FC<LayoutWrapperProps> = ({ children }) => {
       <SideNav />
       <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
         <TopNav />
+
         {children}
       </div>
     </div>

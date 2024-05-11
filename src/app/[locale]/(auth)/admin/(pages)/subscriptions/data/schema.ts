@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const SubscriptionSchema = z.object({
+export const subscriptionSchema = z.object({
   id: z.string(),
   title: z.string(),
   status: z.string(),
@@ -10,4 +10,4 @@ export const SubscriptionSchema = z.object({
   date: z.string(),
 });
 
-export type Subscription = z.infer<typeof SubscriptionSchema>;
+export type Subscription = z.infer<typeof subscriptionSchema>;

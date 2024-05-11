@@ -1,6 +1,6 @@
 // import { useTranslations } from 'next-intl';
 
-import LayoutWrapper from './layout-wrapper';
+import LayoutWrapper from './components/reusable-components/layout/layout-wrapper';
 
 export default function DashboardLayout(props: { children: React.ReactNode }) {
   // const t = useTranslations('DashboardLayout');

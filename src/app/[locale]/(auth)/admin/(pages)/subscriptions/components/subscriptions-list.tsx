@@ -33,7 +33,7 @@ import {
 } from '@/components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-import { type Subscription, SubscriptionSchema } from '../data/schema';
+import { type Subscription, subscriptionSchema } from '../data/schema';
 
 interface SubscriptionRowProps {
   subscription: Subscription;
@@ -48,7 +48,7 @@ async function getSubscriptions() {
 
   const subscriptions = JSON.parse(data.toString());
 
-  return z.array(SubscriptionSchema).parse(subscriptions);
+  return z.array(subscriptionSchema).parse(subscriptions);
 }
 const SubscriptionRow: React.FC<SubscriptionRowProps> = ({ subscription }) => {
   return (
