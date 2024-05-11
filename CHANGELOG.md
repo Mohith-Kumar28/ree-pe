@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/Mohith-Kumar28/ree-pe/compare/v1.2.0...v1.3.0) (2024-05-11)
+
+
+### Features
+
+* added admin and overview page ([ded383c](https://github.com/Mohith-Kumar28/ree-pe/commit/ded383cda53ce1c881c674ac1234282ab68c5d33))
+* added subscriptions page ([29e0463](https://github.com/Mohith-Kumar28/ree-pe/commit/29e04633ba648f68467b44bdddb1a93dd9da291d))
+* added users table ([c9a5ec3](https://github.com/Mohith-Kumar28/ree-pe/commit/c9a5ec3d4486fb7350c5c6091a0400febf15d4f7))
+* create product initial version ([5e9616d](https://github.com/Mohith-Kumar28/ree-pe/commit/5e9616d7a352889ff294e161873118aca9c6c1b3))
+* made table reusable ([c4e6799](https://github.com/Mohith-Kumar28/ree-pe/commit/c4e6799ade2629fd6fbbaef18ea4d8489f2bff73))
+
 # [1.2.0](https://github.com/Mohith-Kumar28/ree-pe/compare/v1.1.0...v1.2.0) (2024-05-05)
 
 
