@@ -12,6 +12,8 @@ import { DataTableViewOptions } from '@/components/reusable-components/table/dat
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
+import { NewSubscriptionSheet } from '../new-subscription/new-subscription-sheet';
+
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
 }
@@ -58,6 +60,8 @@ export function DataTableToolbar<TData>({
         )}
       </div>
       <DataTableViewOptions table={table} />
+
+      <NewSubscriptionSheet />
     </div>
   );
 }

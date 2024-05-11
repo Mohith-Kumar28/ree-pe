@@ -33,7 +33,7 @@ import {
 } from '@/components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-import { type Subscription, subscriptionSchema } from '../data/schema';
+import { type Subscription, subscriptionSchema } from '../../data/schema';
 
 interface SubscriptionRowProps {
   subscription: Subscription;

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
-import { ThemeProvider } from '@/components/reusable-components/layout/theme-provider';
+import { Providers } from '@/components/reusable-components/layout/providers';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ export default function RootLayout(props: {
   return (
     <html lang={props.params.locale}>
       <body>
-        <ThemeProvider
+        <Providers
           attribute="class"
           defaultTheme="system"
           enableSystem
@@ -57,7 +57,7 @@ export default function RootLayout(props: {
           >
             {props.children}
           </NextIntlClientProvider>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

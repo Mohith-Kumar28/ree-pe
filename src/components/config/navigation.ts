@@ -331,9 +331,9 @@ export const homeNavigationConfig: NavigationConfig = {
 export const adminNavItems: AdminNavItem[] = [
   { href: '/admin/overview', icon: Home, label: 'Overview' },
   {
-    href: '#',
+    href: '/admin/products',
     icon: ShoppingCart,
-    label: 'Accounts',
+    label: 'Products',
     badge: 6,
   },
   { href: '/admin/subscriptions', icon: Package, label: 'Subscriptions' },

@@ -2,13 +2,13 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 
-import { DataTableRowActions } from '@/app/[locale]/(auth)/admin/(pages)/customers/components/data-table-row-actions';
+import { DataTableRowActions } from '@/app/[locale]/(auth)/admin/(pages)/customers/components/table/data-table-row-actions';
 import { DataTableColumnHeader } from '@/components/reusable-components/table/data-table-column-header';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
 
-import { labels, priorities, statuses } from '../data/data';
-import type { Customer } from '../data/schema';
+import { labels, priorities, statuses } from '../../data/data';
+import type { Customer } from '../../data/schema';
 
 export const CustomersColumns: ColumnDef<Customer>[] = [
   {

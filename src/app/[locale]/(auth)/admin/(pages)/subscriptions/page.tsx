@@ -3,7 +3,7 @@ import path from 'path';
 import { z } from 'zod';
 
 import HeaderWrapper from '../../components/reusable-components/layout/header-wrapper';
-import SubscriptionsTable from './components/subscriptions-table';
+import SubscriptionsTable from './components/table/subscriptions-table';
 import { subscriptionSchema } from './data/schema';
 
 async function getSubscriptions() {

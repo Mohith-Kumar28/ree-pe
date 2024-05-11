@@ -3,7 +3,7 @@ import path from 'path';
 import { z } from 'zod';
 
 import HeaderWrapper from '../../components/reusable-components/layout/header-wrapper';
-import CustomersTable from './components/customers-table';
+import CustomersTable from './components/table/customers-table';
 import { customerSchema } from './data/schema';
 
 async function getCustomers() {
