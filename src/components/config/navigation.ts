@@ -1,11 +1,13 @@
-import type { MainNavItem, SidebarNavItem } from '@/types/nav';
+import { Home, LineChart, Package, ShoppingCart, Users } from 'lucide-react';
+
+import type { AdminNavItem, MainNavItem, SidebarNavItem } from '@/types/nav';
 
 interface NavigationConfig {
   mainNav: MainNavItem[];
   sidebarNav: SidebarNavItem[];
 }
 
-export const navigationConfig: NavigationConfig = {
+export const homeNavigationConfig: NavigationConfig = {
   mainNav: [
     {
       title: 'Test 1',
@@ -324,3 +326,17 @@ export const navigationConfig: NavigationConfig = {
     },
   ],
 };
+
+// Define the array of navigation items with proper typing
+export const adminNavItems: AdminNavItem[] = [
+  { href: '/admin/overview', icon: Home, label: 'Overview' },
+  {
+    href: '/admin/products',
+    icon: ShoppingCart,
+    label: 'Products',
+    badge: 6,
+  },
+  { href: '/admin/subscriptions', icon: Package, label: 'Subscriptions' },
+  { href: '/admin/customers', icon: Users, label: 'Customers' },
+  { href: '#', icon: LineChart, label: 'Settings' },
+];

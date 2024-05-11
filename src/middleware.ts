@@ -1,5 +1,4 @@
 import { authMiddleware, redirectToSignIn } from '@clerk/nextjs';
-import type { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 
 import { AppConfig } from './utils/AppConfig';
@@ -11,8 +10,11 @@ const intlMiddleware = createMiddleware({
 });
 
 export default authMiddleware({
-  publicRoutes: (req: NextRequest) =>
-    !req.nextUrl.pathname.includes('/dashboard'),
+  publicRoutes: () => {
+    return true;
+  },
+  // publicRoutes: (req: NextRequest) =>
+  //   !req.nextUrl.pathname.includes('/dashboard'),
 
   beforeAuth: (req) => {
     // Execute next-intl middleware before Clerk's auth middleware

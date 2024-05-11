@@ -1,0 +1,38 @@
+[
+  {
+    "id": "SUBSCRIPTION-1234",
+    "title": "Laser Lemonade Machine",
+    "status": "Draft",
+    "label": "Electronics",
+    "price": 499.99,
+    "quantity": 25,
+    "date": "2023-07-12T10:42:00"
+  },
+  {
+    "id": "SUBSCRIPTION-5678",
+    "title": "Robo Coffee Maker",
+    "status": "Draft",
+    "label": "Electronics",
+    "price": 299.99,
+    "quantity": 15,
+    "date": "2023-09-05T08:15:00"
+  },
+  {
+    "id": "SUBSCRIPTION-9012",
+    "title": "Smart Security Camera",
+    "status": "Draft",
+    "label": "Electronics",
+    "price": 199.99,
+    "quantity": 30,
+    "date": "2023-11-20T14:30:00"
+  },
+  {
+    "id": "SUBSCRIPTION-3456",
+    "title": "Bluetooth Speaker System",
+    "status": "Draft",
+    "label": "Electronics",
+    "price": 149.99,
+    "quantity": 20,
+    "date": "2023-12-10T11:20:00"
+  }
+]
